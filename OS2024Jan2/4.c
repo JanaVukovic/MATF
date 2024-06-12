@@ -26,7 +26,6 @@ void process(struct inotify_event * event, char* dir){
         execl("/bin/cat", "cat", event->name, NULL);
         exit(EXIT_FAILURE);
     }else{
-        printf("Ah! Tatice!");
         wait(NULL);
         return;
     }
