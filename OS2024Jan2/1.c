@@ -20,8 +20,7 @@ int main(int argc, char** argv){
     check_error(argc == 1, "argc");
 
     char *buf;
-    check_error((buf = getcwd(NULL, 0)) != NULL, "getwd");
-    free(buf);
+    check_error((buf = getcwd(NULL, 0)) != NULL, "getwd"); //moze i samo "."
 
     time_t modifikacija = 0;
     time_t pristup = 0;
@@ -38,6 +37,9 @@ int main(int argc, char** argv){
     struct utimbuf times;
     times.modtime = modifikacija;
     times.actime = pristup;
+    check_error(closedir(dir) != -1, "closedir");
+    dir = opendir(".");
+    check_error(dir != NULL, "opendir");
     curr = NULL;
     while((curr = readdir(directory)) != NULL){
         check_error(utime(curr->d_name, &times)!=-1, "utime");
