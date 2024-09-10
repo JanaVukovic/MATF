@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="background-image: linear-gradient(pink, white);">
+            <%if(knjiga != null && knjiga.read){%>
+            <h1><%=knjiga.title%></h1>
+        </div>
+        <div class="row">
+            <div class="col-6 kutijica">
+                Ova knjiga je napisana od strane <b><u><%=knjiga.author%></u></b>.Ima <b><u><%=knjiga.pages%></u></b> strana i napisana je <b><u><%=knjiga.year%></u></b>. godine.<br>
+                <a href="/" target="_self">Nazad</a>
+            </div>
+        </div>
+        <%}else{%>
+            <h1>Nepročitana knjiga</h1>
+        </div>
+        <div class="row">
+            <div class="col-6 kutijica" style="border-color: red">
+                Ova knjiga je napisana od strane <b><u>Nepoznati Autor</u></b>.Ima <b><u>100</u></b> strana i napisana je <b><u>2024</u></b>. godine.<br>
+                <a href="/" target="_self">Nazad</a>
+            </div>
+        </div>
+        <%}%>
+    </div>
+</body>
+</html>

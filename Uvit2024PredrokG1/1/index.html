@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fluid container">
+        <hr>
+        <h1>Recipes</h1>
+        <br>
+        <div class="row moj">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <h2>Pizza Margherita</h2>
+                <img src="pizza.jpg" alt="pizza">
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <p>Preheat the oven to 230. Add the sugar and crumble the fresh yeast into warm water. Allow the mixture to stand for 10-15 minutes in a warm place until froth develops on the surface. Sift the flour and salt into a large mixing bowl, make a well in the middle and pour in the yeast mixture and olive oil. Lightly flour your hands, and slowly mix the ingredients together until they bind. Throw down the dough and begin kneading for 10 minutes until smooth, silky and soft. Place in a lightly oiled, non-stick baking tray. Spread the passata on top making sure you go to the edge. Evenly place the mozzarella on top, season with the oregano, then drizzle with a little olive oil. Cook in the oven for 10-12 minutes until the cheese slightly colours. When ready, place the basil leaf on top and tuck in.</p>
+            </div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <ul>
+                    <li>Flour</li>
+                    <li>Yeast</li>
+                    <li>Water</li>
+                    <li>Olive oil</li>
+                    <li>Passata</li>
+                    <li>Mozzarella</li>
+                    <li>Oregano</li>
+                    <li>Basil</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Add New Recipe</h2>
+        <form>
+            <label for="meal">Recipe name</label><br>
+            <input type="text" name="meal" id="meal" class="rasiri"><br>
+            <label for="slika">Recipe image name</label><br>
+            <input type="text" name="slika" id="slika"class="rasiri"><br>
+            <label for="prep">Preparation steps</label><br>
+            <input type="text" rows="2" name="prep" id="prep"class="rasiri produzi"><br>
+            <label for="ing">ingredients</label><br>
+            <input type="text" rows="2" name="ing" id="ing" class="rasiri produzi"><br><br>
+            <input type="submit" class="btn-outline-secondary" value="Add new recipe" class="rasiri">
+        </form>
+    </div>
+</body>
+</html>

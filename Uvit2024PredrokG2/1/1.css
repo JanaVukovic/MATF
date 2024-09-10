@@ -1,0 +1,19 @@
+h1{
+    font-weight: 700;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+input{
+    width: 50%;
+}
+
+table{
+    width: 90%;
+    border: black 2px dotted;
+}
+td{
+    text-align: left;
+    border-bottom: black 1px solid;
+}

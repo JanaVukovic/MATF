@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body style="background-color: blue;">
+    <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3 moj"></div><!--
+        --><div class="col-sm-6 col-md-6 col-lg-6 moj" id="naslov"></div><!--
+        --><div class="col-sm-3 col-md-3 col-lg-3 moj"></div>
+    </div>
+    <br>
+    <table class="table caption-top table-striped table-dark" id="tabelica">
+        <caption style="caption-side:top; color:yellow; font-size:xx-large; text-align: center;">Contest results</caption>
+        <thead>
+            <th>#</th>
+            <th>Artist</th>
+            <th>Country</th>
+            <th>Points</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Baby Lasagna</td>
+                <td>Croatia</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nemo</td>
+                <td>Switzerland</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Teya Dora</td>
+                <td>Serbia</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <row>
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 offset-2" style="font-weight:600; text-align:center; border: 4px yellow dashed;">
+            <form method="get" action="">
+                Enter points:<input type="number" min="0" max = "12" name="poeni" id="poeni">
+                Select country for:<select name="od" id="od">
+                    <option value="Armenia">Armenia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="France">France</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Switzerland">Switzerland</option>
+                </select>
+                Select country from:<select name="za" id="za">
+                    <option value="Armenia">Armenia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="France">France</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Switzerland">Switzerland</option>
+                </select>
+                <br>
+                <input type="submit" class="btn-success" value="Send" style=" height:40px; width:70px; border-radius: 5px;">
+            </form>
+        </div>
+    </row>
+</body>
+</html>

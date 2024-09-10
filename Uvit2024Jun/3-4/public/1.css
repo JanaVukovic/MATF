@@ -1,0 +1,13 @@
+.moj{
+    height: 400px;
+}
+
+#naslov{
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.moj2{
+    height: 200px;
+}

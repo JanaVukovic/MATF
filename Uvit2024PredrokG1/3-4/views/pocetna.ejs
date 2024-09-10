@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/stil.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <hr>
+        <h1>Recipes</h1>
+        <br>
+        <form method="POST" action="/search">
+            <input type="text" name="find" id="find" class="rasiri"><br>
+            <input type="submit" value="Search" class="btn-outline-secondary rasiri">
+        </form>
+        <%if(recipes != null && recipes.length > 0){%>
+            <%for(let i = 0; i < recipes.length; i++){%>
+            <div class="row moj">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <h2><%=recipes[i].meal%></h2>
+                    <img src="/assets/<%= recipes[i].image %>" alt="Ovo je slika recepta sa nazivom iznad">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <p><%=recipes[i].preparation%></p>
+                </div>
+                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                    <ul>
+                        <%for(let j = 0; j < recipes[i].ingredients.length; j++){%>
+                            <li><%=recipes[i].ingredients[j]%></li>
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <%}%>
+        <%}%>
+        <h2>Add New Recipe</h2>
+        <form method="POST" action="/new">
+            <label for="meal">Recipe name</label><br>
+            <input type="text" name="meal" id="meal" class="rasiri"><br>
+            <label for="image">Recipe image name</label><br>
+            <input type="text" name="image" id="image"class="rasiri"><br>
+            <label for="preparation">Preparation steps</label><br>
+            <input type="text" name="preparation" id="preparation"class="rasiri produzi"><br>
+            <label for="ingredients">ingredients</label><br>
+            <input type="text" name="ingredients" id="ingredients" class="rasiri produzi"><br><br>
+            <input type="submit" class="btn-outline-secondary" value="Add new recipe" class="rasiri produzi">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-image: linear-gradient(white,antiquewhite);
+    background-repeat: repeat-x;
+}
+h1{
+    text-align: center;
+}
+
+.moj{
+    height: 350px;
+    border-radius: 10px;
+    border:navajowhite solid 4px;
+    background-color: antiquewhite;
+}
+
+.moj img{
+    width: 80%;
+}
+
+.rasiri{
+    width: 100%;
+}
+
+.produzi{
+    height: 60px;
+}
+
+h2{
+    text-align: center;
+}

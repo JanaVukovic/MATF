@@ -1,0 +1,96 @@
+[{"_id":{"$oid":"6649f5e38c49d58d924b7b09"},"author":"Jane Austen","language":"English","pages":226,"title":"Pride and Prejudice","year":1813,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b0a"},"author":"Samuel Beckett","language":"French, English","pages":256,"title":"Molloy, Malone Dies, The Unnamable, the trilogy","year":1952,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b0b"},"author":"Honoré de Balzac","language":"French","pages":443,"title":"Le Père Goriot","year":1835,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b0c"},"author":"Jorge Luis Borges","language":"Spanish","pages":224,"title":"Ficciones","year":1965,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b0d"},"author":"Giovanni Boccaccio","language":"Italian","pages":1024,"title":"The Decameron","year":1351,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b0e"},"author":"Chinua Achebe","language":"English","pages":209,"title":"Things Fall Apart","year":1958,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b0f"},"author":"Hans Christian Andersen","language":"Danish","pages":784,"title":"Fairy tales","year":1836,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b10"},"author":"Miguel de Cervantes","language":"Spanish","pages":1056,"title":"Don Quijote De La Mancha","year":1610,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b11"},"author":"Albert Camus","language":"French","pages":185,"title":"The Stranger","year":1942,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b12"},"author":"Anton Chekhov","language":"Russian","pages":194,"title":"Stories","year":1886,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b13"},"author":"Geoffrey Chaucer","language":"English","pages":544,"title":"The Canterbury Tales","year":1450,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b14"},"author":"Joseph Conrad","language":"English","pages":320,"title":"Nostromo","year":1904,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b15"},"author":"Denis Diderot","language":"French","pages":596,"title":"Jacques the Fatalist","year":1796,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b16"},"author":"Charles Dickens","language":"English","pages":194,"title":"Great Expectations","year":1861,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b17"},"author":"Emily Brontë","language":"English","pages":342,"title":"Wuthering Heights","year":1847,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b18"},"author":"Alfred Döblin","language":"German","pages":600,"title":"Berlin Alexanderplatz","year,":1929,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b19"},"author":"Fyodor Dostoevsky","language":"Russian","pages":551,"title":"Crime and Punishment","year":1866,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b1a"},"author":"Fyodor Dostoevsky","language":"Russian","pages":656,"title":"The Idiot","year":1869,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b1b"},"author":"Dante Alighieri","language":"Italian","pages":928,"title":"The Divine Comedy","year":1315,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b1c"},"author":"Fyodor Dostoevsky","language":"Russian","pages":768,"title":"The Possessed","year":1872,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b1d"},"author":"Fyodor Dostoevsky","language":"Russian","pages":824,"title":"The Brothers Karamazov","year":1880,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b1e"},"author":"Paul Celan","language":"German","pages":320,"title":"Poems","year":1952,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b1f"},"author":"Ralph Ellison","language":"English","pages":581,"title":"Invisible Man","year":1952,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b20"},"author":"George Eliot","language":"English","pages":800,"title":"Middlemarch","year":1871,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b22"},"author":"Louis-Ferdinand Céline","language":"French","pages":505,"title":"Journey to the End of the Night","year":1932,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b23"},"author":"Euripides","language":"Greek","pages":104,"title":"Medea","year":-431,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b24"},"author":"William Faulkner","language":"English","pages":326,"title":"The Sound and the Fury","year":1929,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b25"},"author":"Federico García Lorca","language":"Spanish","pages":218,"title":"Gypsy Ballads","year":1928,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b26"},"author":"William Faulkner","language":"English","pages":313,"title":"Absalom, Absalom!","year":1936,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b27"},"author":"Gustave Flaubert","language":"French","pages":528,"title":"Madame Bovary","year":1857,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b28"},"author":"Günter Grass","language":"German","pages":600,"title":"The Tin Drum","year":1959,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b29"},"author":"Gabriel García Márquez","language":"Spanish","pages":417,"title":"One Hundred Years of Solitude","year":1967,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b2a"},"author":"Gustave Flaubert","language":"French","pages":606,"title":"Sentimental Education","year":1869,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b2b"},"author":"Gabriel García Márquez","language":"Spanish","pages":368,"title":"Love in the Time of Cholera","year":1985,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b2c"},"author":"Johann Wolfgang von Goethe","language":"German","pages":158,"title":"Faust","year":1832,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b2d"},"author":"Homer","language":"Greek","pages":374,"title":"Odyssey","year":-800,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b2e"},"author":"Henrik Ibsen","language":"Norwegian","pages":68,"title":"A Doll's House","year":1879,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b2f"},"author":"Homer","language":"Greek","pages":608,"title":"Iliad","year":-735,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b30"},"author":"Ernest Hemingway","language":"English","pages":128,"title":"The Old Man and the Sea","year":1952,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b31"},"author":"James Joyce","language":"English","pages":228,"title":"Ulysses","year":1922,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b32"},"author":"Franz Kafka","language":"German","pages":488,"title":"Stories","year":1924,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b33"},"author":"Nikolai Gogol","language":"Russian","pages":432,"title":"Dead Souls","year":1842,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b34"},"author":"Franz Kafka","language":"German","pages":352,"title":"The Castle","year":1926,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b35"},"author":"Franz Kafka","language":"German","pages":160,"title":"The Trial","year":1925,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b36"},"author":"Kālidāsa","language":"Sanskrit","pages":147,"title":"The recognition of Shakuntala","year":150,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b37"},"author":"Yasunari Kawabata","language":"Japanese","pages":288,"title":"The Sound of the Mountain","year":1954,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b38"},"author":"Halldór Laxness","language":"Icelandic","pages":470,"title":"Independent People","year":1934,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b39"},"author":"Nikos Kazantzakis","language":"Greek","pages":368,"title":"Zorba the Greek","year":1946,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b3a"},"author":"D. H. Lawrence","language":"English","pages":432,"title":"Sons and Lovers","year":1913,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b3b"},"author":"Giacomo Leopardi","language":"Italian","pages":184,"title":"Poems","year":1818,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b3c"},"author":"João Guimarães Rosa","language":"Portuguese","pages":494,"title":"The Devil to Pay in the Backlands","year":1956,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b3d"},"author":"Knut Hamsun","language":"Norwegian","pages":176,"title":"Hunger","year":1890,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b3e"},"author":"Doris Lessing","language":"English","pages":688,"title":"The Golden Notebook","year":1962,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b3f"},"author":"Astrid Lindgren","language":"Swedish","pages":160,"title":"Pippi Longstocking","year":1945,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b40"},"author":"Naguib Mahfouz","language":"Arabic","pages":355,"title":"Children of Gebelawi","year":1959,"read":true}
+,{"_id":{"$oid":"6649f5e38c49d58d924b7b41"},"author":"Lu Xun","language":"Chinese","pages":389,"title":"Diary of a Madman","year":1918,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b42"},"author":"Thomas Mann","language":"German","pages":720,"title":"The Magic Mountain","year":1924,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b43"},"author":"Herman Melville","language":"English","pages":378,"title":"Moby Dick","year":1851,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b44"},"author":"Michel de Montaigne","language":"French","pages":404,"title":"Essays","year":1595,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b45"},"author":"Thomas Mann","language":"German","pages":736,"title":"Buddenbrooks","year":1901,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b46"},"author":"Elsa Morante","language":"Italian","pages":600,"title":"History","year":1974,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b47"},"author":"Toni Morrison","language":"English","pages":321,"title":"Beloved","year":1987,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b48"},"author":"Murasaki Shikibu","language":"Japanese","pages":1360,"title":"The Tale of Genji","year":1006,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b49"},"author":"Robert Musil","language":"German","pages":365,"title":"The Man Without Qualities","year":1931,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b4a"},"author":"Vladimir Nabokov","language":"English","pages":317,"title":"Lolita","year":1955,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b4b"},"author":"George Orwell","language":"English","pages":272,"title":"Nineteen Eighty-Four","year":1949,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b4c"},"author":"Fernando Pessoa","language":"Portuguese","pages":272,"title":"The Book of Disquiet","year":1928,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b4d"},"author":"Ovid","language":"Classical Latin","pages":576,"title":"Metamorphoses","year":100,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b4e"},"author":"Marcel Proust","language":"French","pages":2408,"title":"In Search of Lost Time","year":1920,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b4f"},"author":"François Rabelais","language":"French","pages":623,"title":"Gargantua and Pantagruel","year":1533,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b50"},"author":"Edgar Allan Poe","language":"English","pages":842,"title":"Tales","year":1950,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b51"},"author":"Rumi","language":"Persian","pages":438,"title":"The Masnavi","year":1236,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b52"},"author":"Juan Rulfo","language":"Spanish","pages":124,"title":"Pedro Páramo","year":1955,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b53"},"author":"Saadi","language":"Persian","pages":298,"title":"Bostan","year":1257,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b54"},"author":"Salman Rushdie","language":"English","pages":536,"title":"Midnight's Children","year":1981,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b55"},"author":"Tayeb Salih","language":"Arabic","pages":139,"title":"Season of Migration to the North","year":1966,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b56"},"author":"José Saramago","language":"Portuguese","pages":352,"title":"Blindness","year":1995,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b57"},"author":"William Shakespeare","language":"English","pages":432,"title":"Hamlet","year":1603,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b58"},"author":"William Shakespeare","language":"English","pages":384,"title":"King Lear","year":1608,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b59"},"author":"William Shakespeare","language":"English","pages":314,"title":"Othello","year":1609,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b5a"},"author":"Sophocles","language":"Greek","pages":88,"title":"Oedipus the King","year":-430,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b5b"},"author":"Stendhal","language":"French","pages":576,"title":"The Red and the Black","year":1830,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b5c"},"author":"Leo Tolstoy","language":"Russian","pages":1296,"title":"War and Peace","year":1867,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b5d"},"author":"Laurence Sterne","language":"English","pages":640,"title":"The Life And Opinions of Tristram Shandy","year":1760,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b5e"},"author":"Italo Svevo","language":"Italian","pages":412,"title":"Confessions of Zeno","year":1923,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b5f"},"author":"Jonathan Swift","language":"English","pages":178,"title":"Gulliver's Travels","year":1726,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b60"},"author":"Leo Tolstoy","language":"Russian","pages":864,"title":"Anna Karenina","year":1877,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b61"},"author":"Valmiki","language":"Sanskrit","pages":152,"title":"Ramayana","year":-450,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b62"},"author":"Leo Tolstoy","language":"Russian","pages":92,"title":"The Death of Ivan Ilyich","year":1886,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b63"},"author":"Virgil","language":"Classical Latin","pages":442,"title":"The Aeneid","year":-23,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b64"},"author":"Mark Twain","language":"English","pages":224,"title":"The Adventures of Huckleberry Finn","year":1884,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b65"},"author":"Vyasa","language":"Sanskrit","pages":276,"title":"Mahabharata","year":-700,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b66"},"author":"Walt Whitman","language":"English","pages":152,"title":"Leaves of Grass","year":1855,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b67"},"author":"Virginia Woolf","language":"English","pages":216,"title":"Mrs Dalloway","year":1925,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b68"},"author":"Virginia Woolf","language":"English","pages":209,"title":"To the Lighthouse","year":1927,"read":true},
+{"_id":{"$oid":"6649f5e38c49d58d924b7b69"},"author":"Marguerite Yourcenar","language":"French","pages":408,"title":"Memoirs of Hadrian","year":1951,"read":true}]

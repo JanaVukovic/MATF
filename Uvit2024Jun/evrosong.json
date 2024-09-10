@@ -1,0 +1,36 @@
+[
+	{
+		"drzava1": "Serbia",
+		"drzava2": "Croatia",
+		"poeni": 12,
+		"drzave":["Croatia","France", "Germany"]
+	},
+
+	{
+		"drzava1": "Serbia",
+		"drzava2": "Switzerland",
+		"poeni": 10,
+		"drzave":["Croatia","France", "Germany"]
+	},
+	
+	{
+		"drzava1": "Ukraine",
+		"drzava2": "Croatia",
+		"poeni": 10,
+		"drzave":["Croatia","France", "Germany"]
+	},
+	
+	{
+		"drzava1": "Serbia",
+		"drzava2": "Ukraine",
+		"poeni": 10,
+		"drzave":["Croatia","France", "Germany"]
+	},
+	{
+		"drzava1": "Denmark",
+		"drzava2": "Croatia",
+		"poeni": 1,
+		"drzave":["Croatia","France", "Germany"]
+	}
+	
+]
