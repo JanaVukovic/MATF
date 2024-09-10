@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <%if(student != null){%>
+        <div id="displej">
+            <h2><%=student.imePrezime%></h2>
+            <img src="<%=student.slika%>" alt="Slika ucenika">
+        </div>
+        <div class="hleb">
+            <h1>Svedocanstvo</h1>
+            <%=fix%>
+        </div>
+        <ul>
+            <%let sum = 0%>
+            <%for(let i= 0; i < student.ocene.length; i++){%>
+            <li>predmet: <%=student.ocene[i].predmet%>, ocena: <%=student.ocene[i].ocena%></li>
+            <%sum+=student.ocene[i].ocena%>
+            <%}%>
+        </ul>
+        <div class="hleb">
+            <h3>Prosecna ocena: <%=sum/student.ocene.length%></h3>
+            <h3>Unesi novu ocenu</h3>
+            <form method="POST" action="/unos">
+                <input type="text" name="imePrezime" id="imePrezime" hidden value="<%=student.imePrezime%>">
+                <label for="predmet">Predmet</label>
+                <select name="predmet" id="predmet">
+                    <option value="matematika">matematika</option>
+                    <option value="maternji">maternji</option>
+                    <option value="engleski">engliski</option>
+                    <option value="fizicko">fizicko</option>
+                    <option value="muzicko">muzicko</option>
+                    <option value="likovno">likovno</option>
+                    <option value="istorija">istorija</option>
+                    <option value="informatika">informatika</option>
+                    <option value="fizika">fizika</option>
+                    <option value="hemija">hemija</option>
+                </select><br>
+                <label for="ocena">Ocena</label>
+                <input type="number" max ="5" min ="1" name="ocena" id="ocena"><br>
+                <input type="submit" value="unesi">
+            </form>
+        </div>
+        <%}%>
+    </div>
+</body>
+</html>

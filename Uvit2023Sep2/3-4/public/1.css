@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(135deg, red, purple, blue);
+    height: 800px;
+    width: 500px;
+}
+#displej{
+    width: 150px;
+    height: 180px;
+    background-color: white;
+    border: black solid 2px;
+}
+
+#displej img{
+    width: 100%;
+}
+
+#wrapper{
+    align-items: center;
+    width: 800px;
+    height:auto;
+}
+
+.hleb{
+    margin-left:auto;
+    margin-right:auto;
+    width: 60%;
+}

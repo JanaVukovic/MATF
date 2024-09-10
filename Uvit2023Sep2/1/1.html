@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="displej">
+            <h2>Ichigo Kurosaki</h2>
+            <img src="ichigo.jpg" alt="Slika nekog lika">
+        </div>
+        <div class="hleb">
+            <h1>Svedocanstvo</h1>
+        </div>
+        <ul>
+            <li>predmet: matematika, ocena: 5</li>
+            <li>predmet: japanski jezik, ocena: 4</li>
+        </ul>
+        <div class="hleb">
+            <h3>Prosecna ocena: 4.5</h3>
+            <h3>Unesi novu ocenu</h3>
+            <form>
+                <label for="pred">Predmet</label>
+                <select name="pred">
+                    <option value="mat">Matematika</option>
+                    <option value="cg">Crnogorski</option>
+                    <option value="eng">Engliski</option>
+                    <option value="fiz">Fizicko</option>
+                </select><br>
+                <label for="ocena">Ocena</label>
+                <input type="number" max ="5" min ="1"><br>
+                <input type="submit" value="unesi">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

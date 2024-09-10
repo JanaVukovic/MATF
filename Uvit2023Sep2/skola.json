@@ -1,0 +1,23 @@
+[
+	{
+		"imePrezime": "Ichigo Kurosaki",
+		"razred": "7",
+		"odeljenje": "3",
+		"ocene": [{"predmet":"matematika","ocena":"5"},{"predmet":"srpski","ocena":"4"}]
+	},
+
+	{
+		"imePrezime": "Pepeljuga",
+		"razred": "7",
+		"odeljenje": "3",
+		"ocene": [{"predmet":"istorija","ocena":"3"},{"predmet":"srpski","ocena":"1"},
+			{"predmet":"fizicko","ocena":"5"},{"predmet":"muzicko","ocena":"2"}]
+	},
+	{
+		"imePrezime": "Tom Sojer",
+		"razred": "5",
+		"odeljenje": "2",
+		"ocene": [{"predmet":"matematika","ocena":"5"}]
+	}
+	
+]

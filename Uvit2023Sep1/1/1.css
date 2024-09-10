@@ -1,0 +1,39 @@
+#displej{
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+    color:white;
+    border: 4px white solid;
+    border-radius: 50px;
+    box-shadow: rgb(103, 255, 232) 0px 0px 15px;
+    width: 600px;
+    padding: 20px;
+}
+
+table th{
+    color: black;
+    background-color: rgb(12, 103, 83);
+}
+
+form{
+    margin-left: 5%;
+}
+td{
+    border: dotted white 2px;
+}
+input{
+    background-color: black;
+    border-radius: 5px;
+    color:rgb(163, 163, 163);
+}
+
+table{
+    border: dotted white 2px;
+    border-collapse: collapse;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+td:nth-child(even){
+    text-align: right;
+}

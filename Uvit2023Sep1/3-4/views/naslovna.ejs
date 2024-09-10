@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #displej{
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+    color:white;
+    border: 4px white solid;
+    border-radius: 50px;
+    box-shadow: rgb(103, 255, 232) 0px 0px 15px;
+    width: 600px;
+    padding: 20px;
+}
+
+h1{
+    text-align: center; color: white; text-shadow: rgb(103, 255, 232) 0px 0px 15px;
+}
+
+table th{
+    color: black;
+    background-color: rgb(12, 103, 83);
+}
+
+form{
+    margin-left: 5%;
+}
+td{
+    border: dotted white 2px;
+}
+input, select{
+    background-color: black;
+    border-radius: 5px;
+    color:rgb(163, 163, 163);
+}
+
+table{
+    border: dotted white 2px;
+    border-collapse: collapse;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+td:nth-child(even){
+    text-align: right;
+}
+    </style>
+</head>
+<body style="background-color: black;">
+    <%if(account != null){%>
+    <h1>Banka - uvid u stanje</h1>
+    <div id="displej">
+        <table>
+            <thead><th>Ime i Prezime</th><th>Stanje na racunu</th></thead>
+            <tbdoy>
+                <%for(let i = 0; i < account.length; i++){%>
+                    <%if(account[i].stanje >= 0){%><tr><%}%>
+                    <%if(account[i].stanje < 0){%><tr style="background-color: rgb(116, 0, 0);"><%}%>
+                        <td><%=account[i].ime%> <%=account[i].prezime%></td>
+                        <td><%=account[i].stanje%></td>
+                    </tr>
+                <%}%>
+            </tbdoy>
+        </table><br><br>
+        <form method="POST" action="/bank/dodaj">
+            <input type="text" placeholder="Ime i Prezime" id="ime" name="ime">
+            <input type="text" placeholder="Stanje na racunu" id="stanje" name="stanje">
+            <input type="submit" value="Submit" style="color:rgb(31, 194, 31)">
+            <input type="reset" value="Cancel" style="color:red">
+        </form>
+    </div>
+    <%}%>
+    <%if(list !== null){%>
+        <h1>Banka - Bankomat</h1>
+        <div id="displej">
+            <br><br><br><br>
+            <form method="POST" action="/bank/transakcija">
+                <select name="osoba" id="osoba">
+                    <%for(let i = 0; i < list.length; i++){%>
+                        <option value="<%=list[i].ime%> <%=list[i].prezime%>"><%=list[i].ime%> <%=list[i].prezime%></option>
+                    <%}%>
+                </select>
+                <input type="number" placeholder="Kolicina" id="kolicina" name="kolicina"><br>
+                <input type="radio" name="opcija" value="podigni" id="podigni"><label for="podigni">Podigni novac</label><br>
+                <input type="radio" name="opcija" value="uplati" id="uplati"><label for="podigni">Uplati novac</label><br>
+                <input type="submit" value="Submit" style="color:rgb(31, 194, 31)"><br>
+                <input type="reset" value="Cancel" style="color:red">
+            </form>
+        </div>
+    <%}%>
+</body>
+</html>

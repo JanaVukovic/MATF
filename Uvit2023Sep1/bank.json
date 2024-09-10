@@ -1,0 +1,12 @@
+[
+  { "ime": "Rowan", "prezime": "O'Connor", "stanje": 1600 },
+  { "ime": "Melody", "prezime": "Norton", "stanje": 75},
+  { "ime": "Minnie", "prezime": "Terry", "stanje": -120 },
+  { "ime": "Damien", "prezime": "Roach", "stanje": 0 },
+  { "ime": "Ida", "prezime": "Macdonald", "stanje": 2000 },
+  { "ime": "Zak", "prezime": "Carlson", "stanje": 210},
+  { "ime": "Nevaeh", "prezime": "Randolph", "stanje": 0 },
+  { "ime": "Dewi", "prezime": "Sanford", "stanje": -523 },
+  { "ime": "Michelle", "prezime": "Rhodes", "stanje": 17},
+  { "ime": "Oscar", "prezime": "Carter", "stanje": -100 }
+]
