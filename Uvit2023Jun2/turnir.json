@@ -1,0 +1,82 @@
+[
+  {
+    "igrac1": "Novak Djokovic",
+    "igrac2": "Daniil Medvedev",
+    "vreme": "3:24",
+    "poeni1": "7-6-6",
+    "poeni2": "5-2-2",
+    "turnir": "Australian open"
+  },
+  {
+    "igrac1": "Novak Djokovic",
+    "igrac2": "Alexander Zverev",
+    "vreme": "4:15",
+    "poeni1": "6-6-6-7",
+    "poeni2": "7-2-2-6",
+    "turnir": "Australian open"
+  },
+  {
+    "igrac1": "Stefanos Tsitsipas",
+    "igrac2": "Rafael Nadal",
+    "vreme": "2:56",
+    "poeni1": "3-2-7-6-7",
+    "poeni2": "6-6-6-4-5",
+    "turnir": "Australian open"
+  },
+  {
+    "igrac1": "Richard Gasquet",
+    "igrac2": "Rafael Nadal",
+    "vreme": "4:10",
+    "poeni1": "0-1-5",
+    "poeni2": "6-6-7",
+    "turnir": "US open"
+  },
+  {
+    "igrac1": "Dusan Lajovic",
+    "igrac2": "Jenson Brooksby",
+    "vreme": "2:00",
+    "poeni1": "2-0-0",
+    "poeni2": "6-6-3",
+    "turnir": "US open"
+  },
+  {
+    "igrac1": "Richard Gasquet",
+    "igrac2": "Rafael Nadal",
+    "vreme": "2:25",
+    "poeni1": "0-1-5",
+    "poeni2": "6-6-7",
+    "turnir": "US open"
+  },
+  {
+    "igrac1": "Novak Djokovic",
+    "igrac2": "Nick Kyrgios",
+    "vreme": "5:05",
+    "poeni1": "4-6-6-7",
+    "poeni2": "6-3-4-6",
+    "turnir": "Wimbledon"
+  },
+  {
+    "igrac1": "Andy Murray",
+    "igrac2": "John Isner",
+    "vreme": "4:15",
+    "poeni1": "4-6-7-4",
+    "poeni2": "6-7-6-6",
+    "turnir": "Wimbledon"
+  },
+  {
+    "igrac1": "David Goffin",
+    "igrac2": "Cameron Norrie",
+    "vreme": "4:10",
+    "poeni1": "6-5-6-3-5",
+    "poeni2": "3-7-2-6-7",
+    "turnir": "Wimbledon"
+  },
+  {
+    "igrac1": "Novak Djokovic",
+    "igrac2": "Casper Ruud",
+    "vreme": "3:13",
+    "poeni1": "7-6-7",
+    "poeni2": "6-3-5",
+    "turnir": "Roland-Garos"
+  }
+]

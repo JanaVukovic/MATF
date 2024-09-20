@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <h2>Teniski turniri</h2>
+    <div id="separator"></div>
+    <%if(turniri != null){%>
+        <form method="get" action="/turnir">   
+            <select name="turnir" id="turnir"> 
+                <%for(let i = 0; i < turniri.length; i++){%>
+                    <option name="<%=turniri[i]%>" id="<%=turniri[i]%>"><%=turniri[i]%></option>
+                <%}%>
+            </select>
+        <input type="submit" value="Prikazi Turnir">
+      </form>
+    <%}%>
+</body>
+</html>

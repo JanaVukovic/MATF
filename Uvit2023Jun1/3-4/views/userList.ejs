@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="1.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LISTA KORISNIKA</h1>
+    <form method="post" action="/starost/"><input type="number" id="godine" name="godine"><input type="submit" value="Filtriraj"></form>
+    <table>
+        <thead><th>SLIKA</th><th>INFORMACIJE</th></thead>
+        <%if(korisnici != null){%>
+        <%for(let i = 0; i < korisnici.length; i++){
+        <tr><td rowspan="3"><img src="user.png"></td><td>IME: <%=korisnici[i].ime%> <%=korisnici[i].prezime%></td></tr>
+        <tr><td>STAROST: <%=korisnici[i].starost%></td></tr>
+        <%if(osoba != null && (osoba.ime == korisnici[i].ime && osoba.prezime == korisnici[i].prezime && osoba.starost == korisnici[i].starost) && success){%>
+            <tr><td><form method="get" action="/user/"><input type="submit" value="OBRISI KORISNIKA" disabled></form></td></tr>
+        <%}else{%>
+        <tr><td><form method="get" action="/user/"><input type="submit" value="OBRISI KORISNIKA">
+        <input type="text" id="ime" name="ime" value="<%=korisnici[i].ime%>" hidden>
+        <input type="text" id="prezime" name="prezime" value="<%=korisnici[i].prezime%>" hidden>
+        <input type="number" id="godine" name="godine" value="<%=korisnici[i].starost%>" hidden>
+        </form></td></tr>
+        <%}%>
+        <}%>
+        <%}%>
+    </table>
+</body>
+</html>l

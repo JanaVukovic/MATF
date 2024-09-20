@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <%if(turnir != null){%>
+    <h2><%=turnir%></h2>
+    <%for(let i = 0; i < mecevi.length; i++){%>
+    <div id="separator"></div>
+    <div class="block">
+        <table>
+            <tr><td><%=mecevi[i].vreme%></td></tr>
+            <tr><td><%=mecevi[i].igrac1%></td><td><%=mecevi[i].poeni1[0]%></td><td><%=mecevi[i].poeni1[2]%></td><td><%=mecevi[i].poeni1[4]%></td></tr>
+            <tr><td><%=mecevi[i].igrac2%></td><td><%=mecevi[i].poeni2[0]%></td><td><%=mecevi[i].poeni2[2]%></td><td><%=mecevi[i].poeni2[4]%></td></tr>
+        </table>
+    </div>
+    <%}%>
+    <%}%>
+    <h2>Add Game</h2>
+    <form method="get" action="/unesiturnir">
+        <label for="vreme">Vreme:</label><input type="time" id="vreme" name="vreme">
+        <br>
+        <input type="text" id="igrac1" name="igrac1" placeholder="prvi igrac"><input type="number" id="prvi"name="prvi"><input type="number" id="drugi"name="drugi"><input type="number" id="treci"name="treci">
+        <br>
+        <input type="text" id="igrac2" name="igrac2" placeholder="drugi igrac"><input type="number" id="prvi2"name="prvi2"><input type="number" id="drugi2"name="drugi2"><input type="number" id="treci2"name="treci2">
+        <br>
+        <input type ="text" id="turnir" name="turnir" value="<%=turnir%>" hidden>
+        <input type="submit" value="unesi igru">
+    </form>
+</body>
+</html>

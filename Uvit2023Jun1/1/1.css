@@ -1,0 +1,27 @@
+img{
+    height: 150px;
+}
+thead{
+    background-color: gray;
+    color: white;
+}
+td{
+    width: 200px;
+}
+
+table, th{
+    border: solid black 3px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td{
+    border: black dotted 2px;
+}
+
+tr:nth-child(3n){
+    border-bottom: 3px solid black;
+}
