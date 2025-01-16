@@ -1,5 +1,3 @@
-import java.util.Comparator;
-
 public class Tim implements Comparable<Tim>{
     String ime;
     int poeni;
@@ -8,9 +6,7 @@ public class Tim implements Comparable<Tim>{
     public Tim(String ime, int poeni) {
         this.ime = ime;
         this.poeni = poeni;
-        if(poeni != -1)
-            diskvalifikovan = false;
-        else diskvalifikovan = true;
+        diskvalifikovan = poeni == -1;
     }
 
     public String getIme() {

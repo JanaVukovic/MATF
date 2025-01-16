@@ -5,7 +5,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <stdbool.h>
-#include <signal.h>
+#include <string.h>
 #include <time.h>
 #include <errno.h>
 
