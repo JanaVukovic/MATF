@@ -17,7 +17,7 @@ int main(){
 
     for(int n = 1; n <= N; n++){
         for(int m = 1; m <= N; m++){
-            maxZbir[n][m] = max(maxzbir[n-1][m], maxZbir[n][m-1])
+            maxZbir[n][m] = max(maxZbir[n-1][m], maxZbir[n][m-1])
             + mat[n-1][m-1];
         }
     }
