@@ -1,61 +1,85 @@
 #define _XOPEN_SOURCE 700
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <ftw.h>
+#include <sys/stat.h>
 #include <unistd.h>
 #include <sys/types.h>
-#include <sys/stat.h>
-#include <sys/wait.h>
-#include <fcntl.h>
 #include <pwd.h>
-#include <ftw.h>
-#include <time.h>
-#include <pthread.h>
+#include <limits.h>
 #include <errno.h>
-#include <stdbool.h>
-#include <ctype.h>
-#include <string.h>
+#include <pthread.h>
 
-#define MAX 1024
+#define check_error(cond, usrmsg) \
+do { \
+    if (!(cond)) { \
+        perror(usrmsg); \
+        exit(EXIT_FAILURE); \
+    } \
+} while (0)
 
-#define check_error(cond, usrmsg)\
-do{\
-    if(!(cond)){\
-        perror(usrmsg);\
-        exit(EXIT_FAILURE);\
-    }\
-}while(0)
+#define check_errorP(threadError, usrmsg) \
+do { \
+    int thError = threadError; \
+    if (thError > 0) { \
+        errno = thError; \
+        check_error(0, usrmsg); \
+    } \
+} while (0)
 
-int main(int argc, char** argv){
-    check_error(argc == 2, "./a.out fpath");
-    
-    int fd = open(argv[1], O_RDWR);
-    check_error(-1 != fd, "open");
+typedef struct {
+    long int sum;
+    pthread_mutex_t lock;
+} data;
 
-    FILE* f = fdopen(fd, "r+");
-    check_error(NULL != f, "fdopen");
+data global;
 
-    char buffer[MAX];
+void* fun(void *arg) {
+    char* path = arg;
 
-    while(fgets(buffer, MAX, f) != NULL){
-        struct flock lock;
-        lock.l_type = F_WRLCK;
-        lock.l_whence = SEEK_SET;
-        lock.l_start = ftell(f);
-        lock.l_len = -strlen(buffer);
+    struct stat fileinfo;
+    check_error(stat(path, &fileinfo) != -1, "stat");
+    int size = fileinfo.st_size;
 
-        fcntl(fd, F_GETLK, &lock);
-        if(lock.l_type == F_UNLCK){
-            lock.l_type = F_RDLCK;
-        }else{
-            printf("%s w\n", buffer);
-            continue;
+    check_errorP(pthread_mutex_lock(&global.lock), "lock");
+    global.sum += size;
+    check_errorP(pthread_mutex_unlock(&global.lock), "unlock");
+
+    return NULL;
+}
+
+int main(int argc, char** argv) {
+    check_error(argc >= 2, "argc");
+
+    global.sum = 0;
+
+    check_errorP(pthread_mutex_init(&global.lock, NULL), "mutex_init");
+
+    int threadNo = argc - 1;
+    pthread_t *tids = malloc(threadNo * sizeof(pthread_t));
+    check_error(tids != NULL, "malloc");
+
+    int i;
+    for (i = 0; i < threadNo; i++) {
+        if (pthread_create(&tids[i], NULL, fun, argv[i + 1]) != 0) {
+            free(tids);
+            check_errorP(-1, "pthread_create");
         }
-        fcntl(fd, F_GETLK, &lock);
-        if(lock.l_type == F_UNLCK) continue;
-
-        printf("%s r", buffer);
     }
-    
-    fclose(f);
+
+    for (i = 0; i < threadNo; i++) {
+        if (pthread_join(tids[i], NULL) != 0) {
+            free(tids);
+            check_errorP(-1, "pthread_join");
+        }
+    }
+
+    printf("%ld\n", global.sum);
+
+    check_errorP(pthread_mutex_destroy(&global.lock), "mutex_destroy");
+
+    free(tids);
+
     exit(EXIT_SUCCESS);
 }

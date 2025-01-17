@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 public class Hackathon extends Application {
     public static List<Tim> timovi = new ArrayList<>();
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         try {
             Path unos = Paths.get("rezultati.txt");
             Scanner sc = new Scanner(unos);
@@ -38,12 +38,11 @@ public class Hackathon extends Application {
             }
             Collections.sort(timovi);
             launch(args);
-        }catch(IOException e){
-            System.out.println(e);
+        }catch(IOException _){
         }
     }
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage){
         VBox root = new VBox(10);
         root.setPadding(new Insets(10, 10, 10, 10));
         root.setAlignment(Pos.CENTER);
@@ -62,26 +61,28 @@ public class Hackathon extends Application {
         TextArea text = new TextArea();
         root.getChildren().addAll(instrukcije, warning, dugmici, prikaz, cisti, text);
         text.setEditable(false);
-        cisti.setOnAction(e->{
+        cisti.setOnAction(_->{
             text.setText("");
             warning.setText("");
             rbOpadajuce.setSelected(false);
             rbRastuce.setSelected(false);
         });
-        prikaz.setOnAction(e -> {
+        prikaz.setOnAction(_ -> {
             if(!rbRastuce.isSelected() && !rbOpadajuce.isSelected()){
                 warning.setText("BIRAJ PLS");
                 return;
             }
             StringBuilder string = new StringBuilder();
             if(rbRastuce.isSelected()){
-                for (int i = 0; i < timovi.size(); i++) {
-                    string.append(timovi.get(i).toString() + '\n');
+                for (Tim tim : timovi) {
+                    string.append(tim.toString());
+                    string.append("\n");
                 }
                 text.setText(String.valueOf(string));
             }else{
                 for (int i = timovi.size()-1; i >= 0; i--) {
-                    string.append(timovi.get(i).toString() + '\n');
+                    string.append(timovi.get(i).toString());
+                    string.append("\n");
                 }
                 text.setText(String.valueOf(string));
             }

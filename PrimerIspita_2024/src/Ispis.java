@@ -1,3 +1,3 @@
 public interface Ispis {
-    public abstract void prikazi();
+    void prikazi();
 }
